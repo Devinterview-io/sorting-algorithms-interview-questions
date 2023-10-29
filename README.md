@@ -4,7 +4,7 @@
 
 Check out our carefully selected list of **basic** and **advanced** Sorting questions and answers to be well-prepared for your tech interviews in 2024.
 
-![Sorting Decorative Image](https://storage.googleapis.com/dev-stack-app.appspot.com/blogImg/sorting.png?GoogleAccessId=firebase-adminsdk-bgeaf%40dev-stack-app.iam.gserviceaccount.com&Expires=1698606676&Signature=Tr%2FpDSedtgRa%2BJ1NzR6xkV3EkgAPqrrOcoyPUDX7R1T5EOD6XHg7SjUz8rZWosLxLiOxDmjED%2FHb%2BMRccZEnjA2V5EOhAj8HrWqEXr93w%2BGp5JbJWPxnd3S1zZJT2%2F8DdNCLNcv2ohveifsbvQTkPS2PZ4lyIaPtM7beJLbCanVqJN2ZOJJyYsLih7xASITIlT1hG4wcIEnYShSZqmCK5i9sbRqco3i2PeQmJU%2Bl609%2F92S%2BLD9Zutd%2FwNZ20WI4pCWVcn5n1MHlY5aVgYd%2FCUMJNQyIqhL8eL1ikVsmcgP1Ke21KAH2wIvSMXv9M93Z5npY8aLpkc5%2BlAZvN8oIRg%3D%3D)
+![Sorting Decorative Image](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/blogImg%2Fsorting.png?alt=media&token=35ea98ef-1829-47bb-8386-1c9a0ce85623&_gl=1*ldhhi9*_ga*OTYzMjY5NTkwLjE2ODg4NDM4Njg.*_ga_CW55HF8NVT*MTY5ODYwNTk1NS4xOTAuMS4xNjk4NjA2NzQ3LjEzLjAuMA..)
 
 👉🏼 You can also find all answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
 
