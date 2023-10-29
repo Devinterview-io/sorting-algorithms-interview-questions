@@ -1,176 +1,520 @@
+# ⚫ Sorting in Tech Interviews 2024: 23 Key Questions & Answers
 
-# 🖲 26+ Sorting interview questions (answered) for developers in 2021
+**Sorting Algorithms** are methods used to rearrange elements in a sequence based on some criteria, such as numerical or lexicographical order. Common examples include quicksort, mergesort, and bubblesort. In coding interviews, questions on sorting algorithms gauge a candidate's grasp of **data organization techniques** and their trade-offs in terms of time and space complexity.
 
-In computer science, a sorting algorithm is an algorithm that puts elements of a list in a certain order. Check our list of essential Sorting Algorithm interview questions and answers that will trend on data structures interviews in 2021.
+Check out our carefully selected list of **basic** and **advanced** Sorting questions and answers to be well-prepared for your tech interviews in 2024.
 
-</br>
+![Sorting Decorative Image](https://storage.googleapis.com/dev-stack-app.appspot.com/blogImg/sorting.png?GoogleAccessId=firebase-adminsdk-bgeaf%40dev-stack-app.iam.gserviceaccount.com&Expires=1698606676&Signature=Tr%2FpDSedtgRa%2BJ1NzR6xkV3EkgAPqrrOcoyPUDX7R1T5EOD6XHg7SjUz8rZWosLxLiOxDmjED%2FHb%2BMRccZEnjA2V5EOhAj8HrWqEXr93w%2BGp5JbJWPxnd3S1zZJT2%2F8DdNCLNcv2ohveifsbvQTkPS2PZ4lyIaPtM7beJLbCanVqJN2ZOJJyYsLih7xASITIlT1hG4wcIEnYShSZqmCK5i9sbRqco3i2PeQmJU%2Bl609%2F92S%2BLD9Zutd%2FwNZ20WI4pCWVcn5n1MHlY5aVgYd%2FCUMJNQyIqhL8eL1ikVsmcgP1Ke21KAH2wIvSMXv9M93Z5npY8aLpkc5%2BlAZvN8oIRg%3D%3D)
 
-<p align="center">
-  <a href="https://devinterview.io/">
-  <img src="https://source.unsplash.com/collection/52661698/600x300">
-  </a>
-</p>
+👉🏼 You can also find all answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
 
-</br>
+---
 
-> You can also find all 26 answers here 👉🏼 https://devinterview.io/data/sorting-interview-questions
+## 🔹 1. What are _Sorting Algorithms_?
 
-</br>
+### Answer
 
-<div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 1. Why Sorting algorithms are important?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>Efficient sorting is important for <strong>optimizing the efficiency of other algorithms</strong> (such as search and merge algorithms) that require input data to be in sorted lists. Sorting is also often useful for canonicalizing data and for producing human-readable output. Sorting have direct applications in database algorithms, divide and conquer methods, data structure algorithms, and many more.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://en.wikipedia.org/wiki/Sorting_algorithm" rel="noreferrer" target="_blank" title="Why Sorting algorithms are important? Interview Questions Source To Answer">en.wikipedia.org</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 2. What is meant by to "Sort in Place"?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>The idea of an in-place algorithm isn't unique to sorting, but sorting is probably the most important case, or at least the most well-known. The idea is about space efficiency - using the minimum amount of RAM, hard disk or other storage that you can get away with. </p><p>The idea is to <strong>produce an output in the same memory space that contains the input</strong> by successively transforming that data until the output is produced. This avoids the need to use twice the storage - one area for the input and an equal-sized area for the output.</p><p><strong>Quicksort</strong> is one example of In-Place Sorting.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/16585507/sorting-in-place" rel="noreferrer" target="_blank" title="What is meant by to &quot;Sort in Place&quot;? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 3. Classify Sorting Algorithms</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>Sorting algorithms can be categorised based on the following parameters:</p><ol><li><strong>Based on Number of Swaps or Inversion</strong>. This is the number of times the algorithm swaps elements to sort the input. <code>Selection Sort</code> requires the minimum number of swaps.</li><li><strong>Based on Number of Comparisons</strong>. This is the number of times the algorithm compares elements to sort the input. Using Big-O notation, the sorting algorithm examples listed above require at least <code><i>O</i>(<i>n log n</i>)</code> comparisons in the best case and <code><i>O</i>(<i>n</i><sup>2</sup>)</code> comparisons in the worst case for most of the outputs.</li><li><strong>Based on Recursion or Non-Recursion</strong>. Some sorting algorithms, such as <code>Quick Sort</code>, use recursive techniques to sort the input. Other sorting algorithms, such as <code>Selection Sort</code> or <code>Insertion Sort</code>, use non-recursive techniques. Finally, some sorting algorithm, such as <code>Merge Sort</code>, make use of both recursive as well as non-recursive techniques to sort the input.</li><li><strong>Based on Stability</strong>. Sorting algorithms are said to be <code>stable</code> if the algorithm maintains the relative order of elements with equal keys. In other words, two equivalent elements remain in the same order in the sorted output as they were in the input.<ul><li><code>Insertion sort</code>, <code>Merge Sort</code>, and <code>Bubble Sort</code> are stable</li><li><code>Heap Sort</code> and <code>Quick Sort</code> are not stable</li></ul></li><li><strong>Based on Extra Space Requirement.</strong> Sorting algorithms are said to be <em>in place</em> if they require a constant <code><i>O</i>(<i>1</i>)</code> extra space for sorting.<ul><li><code>Insertion sort</code> and <code>Quick-sort</code> are <code>in place</code> sort as we move the elements about the pivot and do not actually use a separate array which is NOT the case in merge sort where the size of the input must be allocated beforehand to store the output during the sort.</li><li><code>Merge Sort</code> is an example of <code>out place</code> sort as it require extra memory space for it’s operations.</li></ul></li></ol></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.freecodecamp.org/news/sorting-algorithms-explained/" rel="noreferrer" target="_blank" title="Classify Sorting Algorithms Interview Questions Source To Answer">www.freecodecamp.org</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 4. What are advantages and disadvantages of Bubble Sort?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p><strong>Advantages:</strong></p><ul><li>Simple to understand</li><li>Ability to detect that the list is sorted efficiently is built into the algorithm. When the list is already sorted (best-case), the complexity of bubble sort is only <code>O(n)</code>. </li></ul><p><strong>Disadvantages:</strong></p><ul><li>It is very slow and runs in <code><i>O</i>(<i>n</i><sup>2</sup>)</code> time in worst as well as average case. Because of that Bubble sort does not deal well with a large set of data. For example Bubble sort is three times slower than <strong>Quicksort</strong> even for n = 100</li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://en.wikipedia.org/wiki/Bubble_sort" rel="noreferrer" target="_blank" title="What are advantages and disadvantages of Bubble Sort? Interview Questions Source To Answer">en.wikipedia.org</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 5. Explain what is ideal Sorting algorithm?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>The <strong>Ideal Sorting Algorithm</strong> would have the following properties:</p><ul><li><strong>Stable</strong>: Equal keys aren’t reordered.</li><li><strong>Operates in place:</strong> requiring <code>O(1)</code> extra space.</li><li>Worst-case <code>O(n log n)</code> key comparisons.</li><li>Worst-case <code>O(n)</code> swaps.</li><li><strong>Adaptive</strong>: Speeds up to <code>O(n)</code> when data is nearly sorted or when there are few unique keys.</li></ul><p>There is <strong>no</strong> algorithm that has all of these properties, and so the choice of sorting algorithm depends on the application.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://www.toptal.com/developers/sorting-algorithms" rel="noreferrer" target="_blank" title="Explain what is ideal Sorting algorithm? Interview Questions Source To Answer">www.toptal.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 6. Explain how Bubble Sort works</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p><strong>Bubble Sort</strong> is based on the idea of repeatedly <em>comparing</em> pairs of adjacent elements and then swapping their positions if they are in the wrong order. Bubble sort is a <em>stable</em>, <em>in-place</em> sort algorithm.</p><p>How it works:</p><ul><li>In an unsorted array of <code>n</code> elements, start with the first two elements and sort them in ascending order. (Compare the element to check which one is greater).</li><li>Compare the second and third element to check which one is greater, and sort them in ascending order.</li><li>Compare the third and fourth element to check which one is greater, and sort them in ascending order.</li><li>...</li><li>Repeat steps 1–<code>n</code> until no more swaps are required.</li></ul><p><strong>Visualisation:</strong></p><p></p><div><div><div><div></div></div></div></div><p></p></div></div><div><div class="mb-2 mt-2"><span class="h5">Complexity Analysis</span></div><div class="hide-small"><div class="row no-gutters my-2 align-items-end"><div class="col font-weight-bold text-muted">Time:</div><div class="col disable text-center"><div class="text-muted font-weight-bold justify-content-center">Constant</div><div class="complexity amazing first p-1 justify-content-center shadow-text">O(1)</div></div><div class="col disable text-center"><div class="text-muted font-weight-bold justify-content-center">Dbl. Logarithmic</div><div class="complexity good p-1 justify-content-center shadow-text">O(log log n)</div></div><div class="col disable text-center"><div class="text-muted font-weight-bold justify-content-center">Logarithmic</div><div class="complexity good p-1 justify-content-center shadow-text">O(log n)</div></div><div class="col disable text-center"><div class="font-weight-bold  text-muted justify-content-center">Square Root</div><div class="complexity fair p-1 justify-content-center shadow-text ">O(√n)</div></div><div class="col disable text-center"><div class="font-weight-bold  text-muted justify-content-center">Linear</div><div class="complexity fair p-1 justify-content-center shadow-text ">O(n)</div></div><div class="col disable text-center"><div class="font-weight-bold text-muted justify-content-center">Linearithmic</div><div class="complexity bad p-1 justify-content-center shadow-text ">O(n log n)</div></div><div class="col text-center"><div class="font-weight-bold  text-muted justify-content-center">Quadratic</div><div class="complexity terrible p-1 justify-content-center shadow-text selected-complexity effect7"><i>O</i>(<i>n</i><sup>2</sup>)</div></div><div class="col disable text-center"><div class="font-weight-bold   text-muted justify-content-center">Exponential</div><div class="complexity terrible p-1 justify-content-center shadow-text "><i>O</i>(<i>2</i><sup>n</sup>)</div></div><div class="col disable text-center"><div class="font-weight-bold text-muted">Factorial</div><div class="complexity terrible last p-1 justify-content-center shadow-text ">O(n!)</div></div></div></div><div class="hide-small"><div class="row no-gutters my-2 align-items-end"><div class="col font-weight-bold text-muted">Space:</div><div class="col text-center"><div class="text-muted font-weight-bold justify-content-center">Constant</div><div class="complexity amazing first p-1 justify-content-center shadow-text selected-complexity effect7">O(1)</div></div><div class="col disable text-center"><div class="text-muted font-weight-bold justify-content-center">Dbl. Logarithmic</div><div class="complexity good p-1 justify-content-center shadow-text">O(log log n)</div></div><div class="col disable text-center"><div class="text-muted font-weight-bold justify-content-center">Logarithmic</div><div class="complexity good p-1 justify-content-center shadow-text">O(log n)</div></div><div class="col disable text-center"><div class="font-weight-bold  text-muted justify-content-center">Square Root</div><div class="complexity fair p-1 justify-content-center shadow-text ">O(√n)</div></div><div class="col disable text-center"><div class="font-weight-bold  text-muted justify-content-center">Linear</div><div class="complexity fair p-1 justify-content-center shadow-text ">O(n)</div></div><div class="col disable text-center"><div class="font-weight-bold text-muted justify-content-center">Linearithmic</div><div class="complexity bad p-1 justify-content-center shadow-text ">O(n log n)</div></div><div class="col disable text-center"><div class="font-weight-bold   text-muted justify-content-center">Quadratic</div><div class="complexity terrible p-1 justify-content-center shadow-text "><i>O</i>(<i>n</i><sup>2</sup>)</div></div><div class="col disable text-center"><div class="font-weight-bold   text-muted justify-content-center">Exponential</div><div class="complexity terrible p-1 justify-content-center shadow-text "><i>O</i>(<i>2</i><sup>n</sup>)</div></div><div class="col disable text-center"><div class="font-weight-bold text-muted">Factorial</div><div class="complexity terrible last p-1 justify-content-center shadow-text ">O(n!)</div></div></div></div><div class="hide-large"><p><b>Time:</b> <mark>O(n^2)</mark></p><p><b>Space:</b> <mark>O(1)</mark></p></div><div class="mt-3"><div><div class="AnswerBody"><p>Bubble sort has a worst-case and average complexity of <code><i>O</i>(<i>n</i><sup>2</sup>)</code>, where <code>n</code> is the number of items being sorted. When the list is already sorted (best-case), the complexity of bubble sort is only <code>O(n)</code>. The space complexity for Bubble Sort is <code>O(1)</code>, because only single additional memory space is required (for <code>temp</code> swap element).</p></div></div></div></div><div style="font-size: 14px;"><div class="mb-3 mt-2"><span class="h5">Implementation</span></div><div><nav class="mdc-tab-bar"><div class="mdc-tab-scroller"><div class="mdc-tab-scroller__scroll-area mdc-tab-scroller__scroll-area--scroll" style="margin-bottom: 0px;"><div class="mdc-tab-scroller__scroll-content"><button class="mdc-ripple-upgraded mdc-ripple-upgraded--background-focused mdc-tab mdc-tab--min-width mdc-tab--active" aria-selected="true" tabindex="0"><div class="mdc-tab__content"><span class="mdc-tab__text-label"><span>JavaScript</span>&nbsp;<span class="shadow-text lang-badge js">JS</span></span></div><span class="mdc-tab-indicator mdc-tab-indicator--active"><span aria-hidden="true" class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span></span><div class="mdc-tab__ripple mdc-ripple-upgraded mdc-ripple-upgraded--background-focused"></div></button><button class="mdc-ripple-upgraded mdc-tab mdc-tab--min-width"><div class="mdc-tab__content"><span class="mdc-tab__text-label"><span>Python</span>&nbsp;<span class="shadow-text lang-badge py">PY</span></span></div><span class="mdc-tab-indicator"><span aria-hidden="true" class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span></span><div class="mdc-tab__ripple mdc-ripple-upgraded"></div></button></div></div></div></nav></div><div class="mt-2"><div class="AnswerBody"><pre><code><span class="token cComment">// Normal</span>
-<span class="token cVar">const</span> <span class="token function-variable cMod">bubbleSort</span> <span class="token cBase">=</span> <span class="token cVar">function</span><span class="token cBase">(</span><span class="token parameter">array</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-  <span class="token cVar">let</span> swaps<span class="token cBase">;</span>
-  <span class="token cVar">do</span> <span class="token cBase">{</span>
-    swaps <span class="token cBase">=</span> <span class="token cBool">false</span><span class="token cBase">;</span>
-    <span class="token cVar">for</span> <span class="token cBase">(</span><span class="token cVar">let</span> i <span class="token cBase">=</span> <span class="token cNum">0</span><span class="token cBase">;</span> i <span class="token cBase">&lt;</span> array<span class="token cBase">.</span>length <span class="token cBase">-</span> <span class="token cNum">1</span><span class="token cBase">;</span> i<span class="token cBase">++</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-      <span class="token cVar">if</span> <span class="token cBase">(</span>array<span class="token cBase">[</span>i<span class="token cBase">]</span> <span class="token cBase">&gt;</span> array<span class="token cBase">[</span>i <span class="token cBase">+</span> <span class="token cNum">1</span><span class="token cBase">]</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-        <span class="token cVar">let</span> temp <span class="token cBase">=</span> array<span class="token cBase">[</span>i <span class="token cBase">+</span> <span class="token cNum">1</span><span class="token cBase">]</span><span class="token cBase">;</span>
-        array<span class="token cBase">[</span>i <span class="token cBase">+</span> <span class="token cNum">1</span><span class="token cBase">]</span> <span class="token cBase">=</span> array<span class="token cBase">[</span>i<span class="token cBase">]</span><span class="token cBase">;</span>
-        array<span class="token cBase">[</span>i<span class="token cBase">]</span> <span class="token cBase">=</span> temp<span class="token cBase">;</span>
-        swaps <span class="token cBase">=</span> <span class="token cBool">true</span><span class="token cBase">;</span>
-      <span class="token cBase">}</span>
-    <span class="token cBase">}</span>
-  <span class="token cBase">}</span> <span class="token cVar">while</span> <span class="token cBase">(</span>swaps<span class="token cBase">)</span><span class="token cBase">;</span>
-  
-  <span class="token cVar">return</span> array<span class="token cBase">;</span>
-<span class="token cBase">}</span><span class="token cBase">;</span>
+**Sorting algorithms** are methods for arranging a dataset in a specific order, such as numerically or alphabetically. They play a critical role in **organizing** and optimizing data for efficient **searching** and **processing**.
 
-<span class="token cComment">// Recursively</span>
-<span class="token cVar">const</span> <span class="token function-variable cMod">bubbleSort</span> <span class="token cBase">=</span> <span class="token cVar">function</span> <span class="token cBase">(</span><span class="token parameter">array<span class="token cBase">,</span> pointer <span class="token cBase">=</span> array<span class="token cBase">.</span>length <span class="token cBase">-</span> <span class="token cNum">1</span></span><span class="token cBase">)</span> <span class="token cBase">{</span>
-  <span class="token cComment">// Base Case</span>
-  <span class="token cVar">if</span> <span class="token cBase">(</span>pointer <span class="token cBase">===</span> <span class="token cNum">0</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-    <span class="token cVar">return</span> array<span class="token cBase">;</span>
-  <span class="token cBase">}</span>
+### Key Types of Sorting Algorithms
 
-  <span class="token cVar">for</span> <span class="token cBase">(</span><span class="token cVar">let</span> i <span class="token cBase">=</span> <span class="token cNum">0</span><span class="token cBase">;</span> i <span class="token cBase">&lt;</span> pointer<span class="token cBase">;</span> i<span class="token cBase">++</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-    <span class="token cVar">if</span> <span class="token cBase">(</span>array<span class="token cBase">[</span>i<span class="token cBase">]</span> <span class="token cBase">&gt;</span> array<span class="token cBase">[</span>i <span class="token cBase">+</span> <span class="token cNum">1</span><span class="token cBase">]</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-      <span class="token cVar">let</span> temp <span class="token cBase">=</span> array<span class="token cBase">[</span>i <span class="token cBase">+</span> <span class="token cNum">1</span><span class="token cBase">]</span><span class="token cBase">;</span>
-      array<span class="token cBase">[</span>i <span class="token cBase">+</span> <span class="token cNum">1</span><span class="token cBase">]</span> <span class="token cBase">=</span> array<span class="token cBase">[</span>i<span class="token cBase">]</span><span class="token cBase">;</span>
-      array<span class="token cBase">[</span>i<span class="token cBase">]</span> <span class="token cBase">=</span> temp<span class="token cBase">;</span>
-    <span class="token cBase">}</span>
-  <span class="token cBase">}</span>   
-  <span class="token cComment">// Recursive call on smaller portion of the array</span>
-  <span class="token cVar">return</span> <span class="token cMod">bubbleSort</span><span class="token cBase">(</span>array<span class="token cBase">,</span> pointer <span class="token cBase">-</span> <span class="token cNum">1</span><span class="token cBase">)</span><span class="token cBase">;</span>  
-<span class="token cBase">}</span><span class="token cBase">;</span></code></pre></div></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/sorting/bubble-sort" rel="noreferrer" target="_blank" title="Explain how Bubble Sort works Interview Questions Source To Answer">github.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 7. Explain how Insertion Sort works</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p><strong>Insertion Sort</strong> is an <em>in-place</em>, <em>stable</em>, <em>comparison-based</em> sorting algorithm. The idea is to maintain a sub-list which is always sorted. An element which is to be 'insert'ed in this sorted sub-list, has to find its appropriate place and then it has to be inserted there. Hence the name, <strong>insertion sort</strong>.</p><p>Steps on how it works:</p><ul><li>If it is the first element, it is already sorted.</li><li>Pick the next element.</li><li>Compare with all the elements in sorted sub-list.</li><li>Shift all the the elements in sorted sub-list that is greater than the value to be sorted.</li><li>Insert the value.</li><li>Repeat until list is sorted.</li></ul><p><strong>Visualisation:</strong></p><p></p><div><div><div><div></div></div></div></div><p></p></div></div><div><div class="mb-2 mt-2"><span class="h5">Complexity Analysis</span></div><div class="hide-small"><div class="row no-gutters my-2 align-items-end"><div class="col font-weight-bold text-muted">Time:</div><div class="col disable text-center"><div class="text-muted font-weight-bold justify-content-center">Constant</div><div class="complexity amazing first p-1 justify-content-center shadow-text">O(1)</div></div><div class="col disable text-center"><div class="text-muted font-weight-bold justify-content-center">Dbl. Logarithmic</div><div class="complexity good p-1 justify-content-center shadow-text">O(log log n)</div></div><div class="col disable text-center"><div class="text-muted font-weight-bold justify-content-center">Logarithmic</div><div class="complexity good p-1 justify-content-center shadow-text">O(log n)</div></div><div class="col disable text-center"><div class="font-weight-bold  text-muted justify-content-center">Square Root</div><div class="complexity fair p-1 justify-content-center shadow-text ">O(√n)</div></div><div class="col disable text-center"><div class="font-weight-bold  text-muted justify-content-center">Linear</div><div class="complexity fair p-1 justify-content-center shadow-text ">O(n)</div></div><div class="col disable text-center"><div class="font-weight-bold text-muted justify-content-center">Linearithmic</div><div class="complexity bad p-1 justify-content-center shadow-text ">O(n log n)</div></div><div class="col text-center"><div class="font-weight-bold  text-muted justify-content-center">Quadratic</div><div class="complexity terrible p-1 justify-content-center shadow-text selected-complexity effect7"><i>O</i>(<i>n</i><sup>2</sup>)</div></div><div class="col disable text-center"><div class="font-weight-bold   text-muted justify-content-center">Exponential</div><div class="complexity terrible p-1 justify-content-center shadow-text "><i>O</i>(<i>2</i><sup>n</sup>)</div></div><div class="col disable text-center"><div class="font-weight-bold text-muted">Factorial</div><div class="complexity terrible last p-1 justify-content-center shadow-text ">O(n!)</div></div></div></div><div class="hide-small"><div class="row no-gutters my-2 align-items-end"><div class="col font-weight-bold text-muted">Space:</div><div class="col text-center"><div class="text-muted font-weight-bold justify-content-center">Constant</div><div class="complexity amazing first p-1 justify-content-center shadow-text selected-complexity effect7">O(1)</div></div><div class="col disable text-center"><div class="text-muted font-weight-bold justify-content-center">Dbl. Logarithmic</div><div class="complexity good p-1 justify-content-center shadow-text">O(log log n)</div></div><div class="col disable text-center"><div class="text-muted font-weight-bold justify-content-center">Logarithmic</div><div class="complexity good p-1 justify-content-center shadow-text">O(log n)</div></div><div class="col disable text-center"><div class="font-weight-bold  text-muted justify-content-center">Square Root</div><div class="complexity fair p-1 justify-content-center shadow-text ">O(√n)</div></div><div class="col disable text-center"><div class="font-weight-bold  text-muted justify-content-center">Linear</div><div class="complexity fair p-1 justify-content-center shadow-text ">O(n)</div></div><div class="col disable text-center"><div class="font-weight-bold text-muted justify-content-center">Linearithmic</div><div class="complexity bad p-1 justify-content-center shadow-text ">O(n log n)</div></div><div class="col disable text-center"><div class="font-weight-bold   text-muted justify-content-center">Quadratic</div><div class="complexity terrible p-1 justify-content-center shadow-text "><i>O</i>(<i>n</i><sup>2</sup>)</div></div><div class="col disable text-center"><div class="font-weight-bold   text-muted justify-content-center">Exponential</div><div class="complexity terrible p-1 justify-content-center shadow-text "><i>O</i>(<i>2</i><sup>n</sup>)</div></div><div class="col disable text-center"><div class="font-weight-bold text-muted">Factorial</div><div class="complexity terrible last p-1 justify-content-center shadow-text ">O(n!)</div></div></div></div><div class="hide-large"><p><b>Time:</b> <mark>O(n^2)</mark></p><p><b>Space:</b> <mark>O(1)</mark></p></div><div class="mt-3"><div><div class="AnswerBody"><ul><li>Insertion sort runs in <code><i>O</i>(<i>n</i><sup>2</sup>)</code> in its worst and average cases. It runs in <code>O(n)</code> time in its best case.</li><li>Insertion sort performs two operations: it scans through the list, comparing each pair of elements, and it swaps elements if they are out of order. Each operation contributes to the running time of the algorithm. If the input array is already in sorted order, insertion sort compares <code>O(n)</code> elements and performs no swaps. Therefore, in the best case, insertion sort runs in <code>O(n)</code> time.</li><li>Space complexity is <code>O(1)</code> because an extra variable key is used (as a temp variable for insertion).</li></ul></div></div></div></div><div style="font-size: 14px;"><div class="mb-3 mt-2"><span class="h5">Implementation</span></div><div><nav class="mdc-tab-bar"><div class="mdc-tab-scroller"><div class="mdc-tab-scroller__scroll-area mdc-tab-scroller__scroll-area--scroll" style="margin-bottom: 0px;"><div class="mdc-tab-scroller__scroll-content"><button class="mdc-ripple-upgraded mdc-ripple-upgraded--background-focused mdc-tab mdc-tab--min-width mdc-tab--active" aria-selected="true" tabindex="0"><div class="mdc-tab__content"><span class="mdc-tab__text-label"><span>JavaScript</span>&nbsp;<span class="shadow-text lang-badge js">JS</span></span></div><span class="mdc-tab-indicator mdc-tab-indicator--active"><span aria-hidden="true" class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span></span><div class="mdc-tab__ripple mdc-ripple-upgraded mdc-ripple-upgraded--background-focused"></div></button><button class="mdc-ripple-upgraded mdc-tab mdc-tab--min-width"><div class="mdc-tab__content"><span class="mdc-tab__text-label"><span>Java</span>&nbsp;<span class="shadow-text lang-badge java">Java</span></span></div><span class="mdc-tab-indicator"><span aria-hidden="true" class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span></span><div class="mdc-tab__ripple mdc-ripple-upgraded"></div></button><button class="mdc-ripple-upgraded mdc-tab mdc-tab--min-width"><div class="mdc-tab__content"><span class="mdc-tab__text-label"><span>Python</span>&nbsp;<span class="shadow-text lang-badge py">PY</span></span></div><span class="mdc-tab-indicator"><span aria-hidden="true" class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span></span><div class="mdc-tab__ripple mdc-ripple-upgraded"></div></button></div></div></div></nav></div><div class="mt-2"><div class="AnswerBody"><pre><code><span class="token cVar">var</span> <span class="token function-variable cMod">insertionSort</span> <span class="token cBase">=</span> <span class="token cVar">function</span><span class="token cBase">(</span><span class="token parameter">a</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-    <span class="token cComment">// Iterate through our array</span>
-    <span class="token cVar">for</span> <span class="token cBase">(</span><span class="token cVar">var</span> i <span class="token cBase">=</span> <span class="token cNum">1</span><span class="token cBase">,</span> value<span class="token cBase">;</span> i <span class="token cBase">&lt;</span> a<span class="token cBase">.</span>length<span class="token cBase">;</span> i<span class="token cBase">++</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-        <span class="token cComment">// Our array is split into two parts: values preceeding i are sorted, while others are unsorted</span>
-        <span class="token cComment">// Store the unsorted value at i</span>
-        value <span class="token cBase">=</span> a<span class="token cBase">[</span>i<span class="token cBase">]</span><span class="token cBase">;</span>
-        <span class="token cComment">// Interate backwards through the unsorted values until we find the correct location for our `next` value</span>
-        <span class="token cVar">for</span> <span class="token cBase">(</span><span class="token cVar">var</span> j <span class="token cBase">=</span> i<span class="token cBase">;</span> a<span class="token cBase">[</span>j <span class="token cBase">-</span> <span class="token cNum">1</span><span class="token cBase">]</span> <span class="token cBase">&gt;</span> value<span class="token cBase">;</span> j<span class="token cBase">--</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-            <span class="token cComment">// Shift the value to the right</span>
-            a<span class="token cBase">[</span>j<span class="token cBase">]</span> <span class="token cBase">=</span> a<span class="token cBase">[</span>j <span class="token cBase">-</span> <span class="token cNum">1</span><span class="token cBase">]</span><span class="token cBase">;</span>
-        <span class="token cBase">}</span>
-        <span class="token cComment">// Once we've created an open "slot" in the correct location for our value, insert it</span>
-        a<span class="token cBase">[</span>j<span class="token cBase">]</span> <span class="token cBase">=</span> value<span class="token cBase">;</span>
-    <span class="token cBase">}</span>
-    <span class="token cComment">// Return the sorted array</span>
-    <span class="token cVar">return</span> a<span class="token cBase">;</span>
-<span class="token cBase">}</span><span class="token cBase">;</span></code></pre></div></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://medium.com/karuna-sehgal/an-introduction-to-insertion-sort-16b97619697" rel="noreferrer" target="_blank" title="Explain how Insertion Sort works Interview Questions Source To Answer">medium.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 8. How would you optimise Bubble Sort?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>In Bubble sort, you know that after <code>k</code> passes, the largest <code>k</code> elements are sorted at the <code>k</code> last entries of the array, so the conventional Bubble sort uses:</p><pre><code><span class="token cVar">public</span> <span class="token cVar">static</span> <span class="token cVar">void</span> <span class="token cMod">bubblesort</span><span class="token cBase">(</span><span class="token cVar">int</span><span class="token cBase">[</span><span class="token cBase">]</span> a<span class="token cBase">)</span> <span class="token cBase">{</span>
-  <span class="token cVar">for</span> <span class="token cBase">(</span><span class="token cVar">int</span> i <span class="token cBase">=</span> <span class="token cNum">1</span><span class="token cBase">;</span> i <span class="token cBase">&lt;</span> a<span class="token cBase">.</span>length<span class="token cBase">;</span> i<span class="token cBase">++</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-    <span class="token cVar">boolean</span> is_sorted <span class="token cBase">=</span> <span class="token cBool">true</span><span class="token cBase">;</span>
+-  **Comparison-Based Algorithms**: Sort elements by comparing them pairwise. Most have $O(n \log n)$ time complexity.
 
-    <span class="token cVar">for</span> <span class="token cBase">(</span><span class="token cVar">int</span> j <span class="token cBase">=</span> <span class="token cNum">0</span><span class="token cBase">;</span> j <span class="token cBase">&lt;</span> a<span class="token cBase">.</span>length <span class="token cBase">-</span> i<span class="token cBase">;</span> j<span class="token cBase">++</span><span class="token cBase">)</span> <span class="token cBase">{</span> <span class="token cComment">// skip the already sorted largest elements, compare to a.length - 1</span>
-      <span class="token cVar">if</span> <span class="token cBase">(</span>a<span class="token cBase">[</span>j<span class="token cBase">]</span> <span class="token cBase">&gt;</span> a<span class="token cBase">[</span>j<span class="token cBase">+</span><span class="token cNum">1</span><span class="token cBase">]</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-         <span class="token cVar">int</span> temp <span class="token cBase">=</span> a<span class="token cBase">[</span>j<span class="token cBase">]</span><span class="token cBase">;</span>
-         a<span class="token cBase">[</span>j<span class="token cBase">]</span> <span class="token cBase">=</span> a<span class="token cBase">[</span>j<span class="token cBase">+</span><span class="token cNum">1</span><span class="token cBase">]</span><span class="token cBase">;</span>
-         a<span class="token cBase">[</span>j<span class="token cBase">+</span><span class="token cNum">1</span><span class="token cBase">]</span> <span class="token cBase">=</span> temp<span class="token cBase">;</span>
-         is_sorted <span class="token cBase">=</span> <span class="token cBool">false</span><span class="token cBase">;</span>
-      <span class="token cBase">}</span>
-    <span class="token cBase">}</span>
+-  **Non-Comparison-Based Algorithms**: Utilize specialized techniques, often correlated with specific data types. While faster, they are more restricted in their applications.
 
-    <span class="token cVar">if</span><span class="token cBase">(</span>is_sorted<span class="token cBase">)</span> <span class="token cVar">return</span><span class="token cBase">;</span>
-  <span class="token cBase">}</span>
-<span class="token cBase">}</span></code></pre><p>Now, that would still do a lot of unnecessary iterations when the array has a long sorted tail of largest elements. If you remember where you made your <em>last swap</em>, you know that after that index, there are the largest elements in order, so:</p><pre><code><span class="token cVar">public</span> <span class="token cVar">static</span> <span class="token cVar">void</span> <span class="token cMod">bubblesort</span><span class="token cBase">(</span><span class="token cVar">int</span><span class="token cBase">[</span><span class="token cBase">]</span> a<span class="token cBase">)</span> <span class="token cBase">{</span>
-  <span class="token cVar">int</span> lastSwap <span class="token cBase">=</span> a<span class="token cBase">.</span>length <span class="token cBase">-</span> <span class="token cNum">1</span><span class="token cBase">;</span>
-  <span class="token cVar">for</span> <span class="token cBase">(</span><span class="token cVar">int</span> i <span class="token cBase">=</span> <span class="token cNum">1</span><span class="token cBase">;</span> i<span class="token cBase">&lt;</span> a<span class="token cBase">.</span>length<span class="token cBase">;</span> i<span class="token cBase">++</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-    <span class="token cVar">boolean</span> is_sorted <span class="token cBase">=</span> <span class="token cBool">true</span><span class="token cBase">;</span>
-    <span class="token cVar">int</span> currentSwap <span class="token cBase">=</span> <span class="token cBase">-</span><span class="token cNum">1</span><span class="token cBase">;</span>
 
-    <span class="token cVar">for</span> <span class="token cBase">(</span><span class="token cVar">int</span> j <span class="token cBase">=</span> <span class="token cNum">0</span><span class="token cBase">;</span> j <span class="token cBase">&lt;</span> lastSwap<span class="token cBase">;</span> j<span class="token cBase">++</span><span class="token cBase">)</span> <span class="token cBase">{</span> <span class="token cComment">// compare to a.length - i</span>
-      <span class="token cVar">if</span> <span class="token cBase">(</span>a<span class="token cBase">[</span>j<span class="token cBase">]</span> <span class="token cBase">&gt;</span> a<span class="token cBase">[</span>j<span class="token cBase">+</span><span class="token cNum">1</span><span class="token cBase">]</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-         <span class="token cVar">int</span> temp <span class="token cBase">=</span> a<span class="token cBase">[</span>j<span class="token cBase">]</span><span class="token cBase">;</span>
-         a<span class="token cBase">[</span>j<span class="token cBase">]</span> <span class="token cBase">=</span> a<span class="token cBase">[</span>j<span class="token cBase">+</span><span class="token cNum">1</span><span class="token cBase">]</span><span class="token cBase">;</span>
-         a<span class="token cBase">[</span>j<span class="token cBase">+</span><span class="token cNum">1</span><span class="token cBase">]</span> <span class="token cBase">=</span> temp<span class="token cBase">;</span>
-         is_sorted <span class="token cBase">=</span> <span class="token cBool">false</span><span class="token cBase">;</span>
-         currentSwap <span class="token cBase">=</span> j<span class="token cBase">;</span>
-      <span class="token cBase">}</span>
-    <span class="token cBase">}</span>
+### Quick Overview of Sorting Algorithms
 
-    <span class="token cVar">if</span> <span class="token cBase">(</span>is_sorted<span class="token cBase">)</span> <span class="token cVar">return</span><span class="token cBase">;</span>
-    lastSwap <span class="token cBase">=</span> currentSwap<span class="token cBase">;</span>
-  <span class="token cBase">}</span>
-<span class="token cBase">}</span></code></pre><p>This allows to skip over many elements, resulting in about a worst case 50% improvement in comparison count (though no improvement in swap counts), and adds very little complexity.</p></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/16195092/optimized-bubble-sort-java" rel="noreferrer" target="_blank" title="How would you optimise Bubble Sort? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 9. Insert an item in a sorted Linked List maintaining order</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><p>The <code>add()</code> method below walks down the list until it finds the appropriate position. Then, it splices in the new node and updates the <code>start</code>, <code>prev</code>, and <code>curr</code> pointers where applicable.</p><p>Note that the reverse operation, namely <em>removing</em> elements, doesn't need to change, because you are simply throwing things away which would not change any order in the list.</p></div></div><div style="font-size: 14px;"><div class="mb-3 mt-2"><span class="h5">Implementation</span></div><div><nav class="mdc-tab-bar"><div class="mdc-tab-scroller"><div class="mdc-tab-scroller__scroll-area mdc-tab-scroller__scroll-area--scroll" style="margin-bottom: 0px;"><div class="mdc-tab-scroller__scroll-content"><button class="mdc-ripple-upgraded mdc-ripple-upgraded--background-focused mdc-tab mdc-tab--min-width mdc-tab--active" aria-selected="true" tabindex="0"><div class="mdc-tab__content"><span class="mdc-tab__text-label"><span>Java</span>&nbsp;<span class="shadow-text lang-badge java">Java</span></span></div><span class="mdc-tab-indicator mdc-tab-indicator--active"><span aria-hidden="true" class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span></span><div class="mdc-tab__ripple mdc-ripple-upgraded mdc-ripple-upgraded--background-focused"></div></button></div></div></div></nav></div><div class="mt-2"><div class="AnswerBody"><pre><code><span class="token cVar">public</span> <span class="token cVar">void</span> <span class="token cMod">add</span><span class="token cBase">(</span><span class="token class-name">T</span> x<span class="token cBase">)</span> <span class="token cBase">{</span>
-    <span class="token class-name">Node</span> newNode <span class="token cBase">=</span> <span class="token cVar">new</span> <span class="token class-name">Node</span><span class="token cBase">(</span><span class="token cBase">)</span><span class="token cBase">;</span>
-    newNode<span class="token cBase">.</span>info <span class="token cBase">=</span> x<span class="token cBase">;</span>
+| Algorithm | Average Case Complexity | Worst Case Complexity | Space Complexity | Stability |
+|-----------|-------------------------|-----------------------|------------------|-----------|
+| Bubble Sort | $O(n^2)$ | $O(n^2)$ | Constant | Yes |
+| Selection Sort | $O(n^2)$ | $O(n^2)$ | Constant | No |
+| Insertion Sort | $O(n^2)$ | $O(n^2)$ | Constant | Yes |
+| Merge Sort | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes |
+| Quick Sort | $O(n \log n)$ | $O(n^2)$ | In-Place* | No |
+| Heap Sort | $O(n \log n)$ | $O(n \log n)$ | In-Place | No |
+| Counting Sort | $O(n+k)$ | $O(n+k)$ | $O(n + k)$ | Yes |
+| Radix Sort | $O(d(n+k))$ | $O(d(n+k))$ | $O(n + k)$ | Yes |
+| Bucket Sort | $O(n + k)$ | $O(n^2)$ | $O(n + k)$ | Yes |
 
-    <span class="token cComment">// case: start is null; just assign start to the new node and return</span>
-    <span class="token cVar">if</span> <span class="token cBase">(</span>start <span class="token cBase">==</span> <span class="token cVar">null</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-        start <span class="token cBase">=</span> newNode<span class="token cBase">;</span>
-        curr <span class="token cBase">=</span> start<span class="token cBase">;</span>
-        <span class="token cComment">// prev is null, hence not formally assigned here</span>
-        <span class="token cVar">return</span><span class="token cBase">;</span>
-    <span class="token cBase">}</span>
+\* Note: "In-Place" for Quick Sort means it doesn't require additional space proportional to the input size, but it does require a small amount of extra space for recursive function calls (stack space).
 
-    <span class="token cComment">// case: new node to be inserted comes before the current start;</span>
-    <span class="token cComment">//       in this case, point the new node to start, update pointers, and return</span>
-    <span class="token cVar">if</span> <span class="token cBase">(</span>x<span class="token cBase">.</span><span class="token cMod">compareTo</span><span class="token cBase">(</span>start<span class="token cBase">.</span>info<span class="token cBase">)</span> <span class="token cBase">&lt;</span> <span class="token cNum">0</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-        newNode<span class="token cBase">.</span>link <span class="token cBase">=</span> start<span class="token cBase">;</span>
-        start <span class="token cBase">=</span> newNode<span class="token cBase">;</span>
-        curr <span class="token cBase">=</span> start<span class="token cBase">;</span>
-        <span class="token cComment">// again we leave prev undefined, as it is null</span>
-        <span class="token cVar">return</span><span class="token cBase">;</span>
-    <span class="token cBase">}</span>
+### Visual Representation
 
-    <span class="token cComment">// otherwise walk down the list until reaching either the end of the list</span>
-    <span class="token cComment">// or the first position whose element is greater than the node to be</span>
-    <span class="token cComment">// inserted; then insert the node and update the pointers</span>
-    prev <span class="token cBase">=</span> start<span class="token cBase">;</span>
-    curr <span class="token cBase">=</span> start<span class="token cBase">;</span>
-    <span class="token cVar">while</span> <span class="token cBase">(</span>curr <span class="token cBase">!=</span> <span class="token cVar">null</span> <span class="token cBase">&amp;&amp;</span> x<span class="token cBase">.</span><span class="token cMod">compareTo</span><span class="token cBase">(</span>curr<span class="token cBase">.</span>info<span class="token cBase">)</span> <span class="token cBase">&gt;=</span> <span class="token cNum">0</span><span class="token cBase">)</span> <span class="token cBase">{</span>
-        prev <span class="token cBase">=</span> curr<span class="token cBase">;</span>
-        curr <span class="token cBase">=</span> curr<span class="token cBase">.</span>link<span class="token cBase">;</span>
-    <span class="token cBase">}</span>
+![Different Sorting Algorithms Visualization](https://firebasestorage.googleapis.com/v0/b/dev-stack-app.appspot.com/o/sorting%2F1_bPpvELo9_QqQsDz7CSbwXQ-min.gif?alt=media&token=609f7eef-b30a-438f-acf6-0aa16ac9a935&_gl=1*eipuiw*_ga*OTYzMjY5NTkwLjE2ODg4NDM4Njg.*_ga_CW55HF8NVT*MTY5NjUxNDkyNi4xNDMuMS4xNjk2NTE0OTQ0LjQyLjAuMA..)
 
-    <span class="token cComment">// splice in the new node and update the curr pointer (prev already correct)</span>
-    newNode<span class="token cBase">.</span>link <span class="token cBase">=</span> prev<span class="token cBase">.</span>link<span class="token cBase">;</span>
-    prev<span class="token cBase">.</span>link <span class="token cBase">=</span> newNode<span class="token cBase">;</span>
-    curr <span class="token cBase">=</span> newNode<span class="token cBase">;</span>
-<span class="token cBase">}</span></code></pre></div></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/41959004/keeping-a-linkedlist-always-sorted" rel="noreferrer" target="_blank" title="Insert an item in a sorted Linked List maintaining order Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 10. Which sort algorithm works best on mostly sorted data?</h2></div> <div data-v-4865b274=""><h3 data-v-4865b274="">Answer:</h3> <div data-v-4865b274=""><div><div><div class="AnswerBody"><ul><li>Only a few items: <strong>Insertion Sort</strong></li><li>Items are mostly sorted already: <strong>Insertion Sort</strong></li><li>Concerned about worst-case scenarios: <strong>Heap Sort</strong></li><li>Interested in a good average-case result: <strong>Quick Sort</strong></li><li>Items are drawn from a dense universe: <strong>Bucket Sort</strong></li><li>Desire to write as little code as possible: <strong>Insertion Sort</strong></li></ul></div></div><div class="row my-2"><div><span><i>Source:</i>&nbsp;<span><a href="https://stackoverflow.com/questions/220044/which-sort-algorithm-works-best-on-mostly-sorted-data" rel="noreferrer" target="_blank" title="Which sort algorithm works best on mostly sorted data? Interview Questions Source To Answer">stackoverflow.com</a></span></span>&nbsp; &nbsp;</div></div></div></div></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 11. When is Quicksort better than Mergesort?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 12. What is "stability" in sorting algorithms and why is it important?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 13. What's the difference between External vs Internal sorting?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 14. When is each Sorting algorithm used?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 15. Explain how Merge Sort works</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 16. Explain how Heap Sort works</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 17. Why would you use Merge Sort for a Linked List?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 18. Which of the following algorithms would be the fastest?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 19. Sort a Stack using another Stack</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 20. Sort a Stack using Recursion</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 21. Why is Merge sort preferred over Quick sort for sorting Linked Lists?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 22. When Merge Sort is preferred over Quick Sort?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 23. Explain how to find 100 largest numbers out of an array of 1 billion numbers</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 24. Explain how Radix Sort works</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 25. Explain how QuickSort works</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div><div data-v-4865b274="" data-v-43a77f0d=""><div data-v-4865b274=""><h2 data-v-4865b274="">🔹 26. How can I pair socks from a pile efficiently?</h2></div> <div data-v-4865b274="">
-    👉🏼 Check
-    <a data-v-4865b274="" href="https://devinterview.io/data/sorting-interview-questions">all answers</a></div> <br data-v-4865b274=""><br data-v-4865b274=""></div></div>
+### Practical Applications
 
-<br />
+#### Data Structures and Algorithms
 
-> You can also find more data structures interview questions here 👉🏼 https://devinterview.io/data/
+- **Trees**: Balanced trees (e.g., AVL, Red-Black) use sorted data for efficient operations.
+- **Heaps**: Used in priority queues for quick priority element extraction.
+- **Graphs**: Algorithms like Kruskal's and Dijkstra's benefit from sorted data.
+
+#### Database Systems
+
+- **Indexes**: Sorted indices (e.g., B-Trees, B+ Trees) improve database efficiency.
+
+#### Machine Learning
+
+- **Feature Analysis**: Sorting helps in feature selection and outlier detection.
+
+#### Natural Language Processing
+
+- **Data Cleaning**: Sorting aids in deduplication and term frequency analysis.
+
+#### Preprocessing
+
+- **Search/Merge**: 
+  - Faster searches with binary search on sorted data.
+  - Parallel merging in distributed systems uses sorted data.
+- **Visualization**: Sorting enhances data representation in charts and histograms.
+
+---
+
+## 🔹 2. Classify _Sorting Algorithms_.
+
+### Answer
+
+**Sorting algorithms** can be categorized based on their characteristics.
+
+### Categories of Sorting Algorithms
+
+#### Comparison vs. Non-comparison
+
+- **Comparison-based Algorithms**: Rely on comparing the elements to determine their order.
+  - Examples: QuickSort, Bubble Sort, Merge Sort.
+
+- **Non-comparison based Algorithms**: Sort without direct comparisons, often rely on the nature of the data, like the distribution or range of input values.
+  - Examples: Counting Sort, Radix Sort, Bucket Sort.
+
+- **Hybrid Sorts**: Combine the best of both worlds by using quick, comparison-based techniques and then switching to specialized methods when beneficial.
+  - Examples: IntroSort (combines QuickSort, HeapSort, and Insertion Sort).
+
+#### Number of Swaps or Inversions
+
+- **No or Few Swaps**: Designed to minimize the number of swaps, making them efficient for certain types of data.
+  - Examples: Insertion Sort (optimized for nearly sorted data), QuickSort.
+
+- **Multiple Swaps**: Swapping neighboring elements multiple times throughout the sorting process.
+  - Example: Bubble Sort.
+
+#### Recursion vs. Iteration
+
+- **Recursive Algorithms**: Use a divide-and-conquer approach, breaking the problem into smaller sub-problems and solving them recursively.
+  - Examples: Merge Sort, QuickSort.
+
+- **Iterative Algorithms**: Repeatedly apply a set of operations using loops without making recursive calls.
+  - Examples: Bubble Sort, Insertion Sort.
+
+#### Stability
+
+- **Stable Algorithms**: Elements with equal keys appear in the same order in the sorted output as they appear in the input.
+  - Examples: Merge Sort, Insertion Sort, Bubble Sort.
+
+- **Unstable Algorithms**: The relative order of records with equal keys might change.
+  - Examples: QuickSort, HeapSort, Selection Sort.
+
+#### Adaptive vs. Non-Adaptive
+
+- **Adaptive Algorithms**: Take advantage of existing order in the dataset, meaning their performance improves when dealing with partially sorted data or data that has some inherent ordering properties.
+  - Examples: Insertion Sort, Bubble Sort, IntroSort.
+
+- **Non-Adaptive Algorithms**: Performance remains the same regardless of the initial order of the dataset.
+  - Examples: Merge Sort, HeapSort.
+
+#### Space Requirement
+
+- **In-Place Algorithms**: Sort the input data within the same space where it's stored, using only a constant amount of extra memory (excluding the call stack in the case of recursive algorithms).
+  - Examples: QuickSort, Bubble Sort, Insertion Sort.
+
+- **Not-In-Place Algorithms**: Require additional memory or data structures to store temporary data.
+  - Examples: Merge Sort, Counting Sort.
+
+### Categories Overview
+
+| Algorithm       | Method             | In-Place | Adaptive | Stability     | Swaps / Inversions | Recursion vs. Iteration |
+|-----------------|--------------------|----------|----------|---------------|---------------------|--------------------------|
+| QuickSort       | Divide and Conquer | Yes*     | No*      | Unstable      | Few                 | Recursive                |
+| Bubble Sort     | Exchange           | Yes      | Yes      | Stable        | Multiple            | Iterative                |
+| Merge Sort      | Divide and Conquer | No       | No       | Stable        | -                   | Recursive                |
+| Counting Sort   | Non-comparative    | No       | No       | Stable        | -                   | Iterative                |
+| Radix Sort      | Non-comparative    | No       | No       | Stable        | -                   | Iterative                |
+| Bucket Sort     | Distributive       | No       | No       | Depends*      | -                   | Iterative                |
+| IntroSort       | Hybrid             | Yes      | No       | Unstable      | Few                 | Recursive and Iterative  |
+| Insertion Sort  | Incremental        | Yes      | Yes      | Stable        | Few                 | Iterative                |
+| HeapSort        | Selection          | Yes      | No       | Unstable      | -                   | Iterative                |
+
+\* Notes:
+- **QuickSort**: Depending on implementation, can be in-place or not, and can be adaptive or not.
+- **Bucket Sort**: Stability depends on the sorting algorithm used within each bucket.
+
+---
+
+## 🔹 3. When to use each _Sorting Algorithm_?
+
+### Answer
+
+**Sorting algorithms** are chosen based on the nature of the data, the requirements of the application, and the constraints of the system.
+
+### When to Use Each Sorting Algorithm
+
+#### 1. QuickSort
+   - **When**: You're dealing with large datasets and require an efficient general-purpose in-place sort.
+   - **Why**: QuickSort is often faster in practice than other $O(n \log n)$ algorithms due to smaller hidden constants and good cache performance.
+   - **Avoid**: When stability is a requirement.
+
+#### 2. Merge Sort
+
+   - **When**: Stability is crucial. Useful for linked lists or when working with large datasets and external storage like disk drives.
+   - **Why**: Merge Sort ensures stable sorting and has a consistent $O(n \log n)$ performance.
+   - **Avoid**: In scenarios with memory constraints, as it requires additional space.
+
+#### 3. Insertion Sort
+
+   - **When**: The dataset is small or already partially sorted.
+   - **Why**: It's simple, in-place, and adaptive. For small datasets or nearly sorted data, its overhead is minimal, making it faster in practice.
+   - **Avoid**: Large datasets as its worst-case performance is $O(n^2)$.
+
+#### 4. HeapSort
+
+   - **When**: Memory usage needs to be minimized.
+   - **Why**: HeapSort is in-place and has consistent $O(n \log n)$ time complexity.
+   - **Avoid**: When stability is a requirement or when the absolute fastest performance is necessary (as other algorithms might have better average-case performance).
+
+#### 5. Bubble Sort
+
+   - **When**: The dataset is tiny or for educational purposes.
+   - **Why**: It's simple to understand and implement.
+   - **Avoid**: Practical applications with larger datasets due to $O(n^2)$ average and worst-case performance.
+
+#### 6. Selection Sort
+
+   - **When**: Memory usage is a primary concern, and the dataset is small.
+   - **Why**: It's an in-place sort with a consistent number of swaps regardless of the initial order.
+   - **Avoid**: Large datasets and when stability is needed.
+
+#### 7. Radix Sort
+
+   - **When**: You're sorting integers or strings of fixed-length, and the range isn't exceedingly large.
+   - **Why**: It provides linear time complexity given certain conditions about the data.
+   - **Avoid**: When dealing with floating-point numbers or data with a huge range.
+
+#### 8. Counting Sort
+
+   - **When**: The range of the input data (integers) is not significantly larger than the number of values to be sorted.
+   - **Why**: It sorts in $O(n + k)$ time where $k$ is the range of input.
+   - **Avoid**: Datasets with a large range or non-integer data.
+
+#### 9. Bucket Sort
+
+   - **When**: You have uniformly distributed data over a range.
+   - **Why**: It distributes elements into buckets and then sorts these buckets. With uniform distribution, it can be linear in time.
+   - **Avoid**: Datasets with non-uniform distributions.
+
+#### 10. IntroSort
+
+   - **When**: You need a general-purpose sort that combines the best of QuickSort, HeapSort, and Insertion Sort.
+   - **Why**: It begins with QuickSort, switches to HeapSort when the recursion depth exceeds a level, and uses Insertion Sort for small segments.
+   - **Avoid**: When the dataset has very specific characteristics that are better suited to a specialized algorithm.
+
+It is a good practice to run **empirical tests** on a sample of your data to determine which algorithm performs best in your particular use case.
+
+---
+
+## 🔹 4. What would be an _Ideal Sorting Algorithm_?
+
+### Answer
+
+An **ideal sorting algorithm** would have these key characteristics:
+
+1. **Stability**: Maintains relative order of equivalent elements.
+2. **In-Place Sorting**: Minimizes memory usage.
+3. . **Adaptivity**: Adjusts strategy based on data characteristics.
+4. **Time Complexity**: Ideally $O(n \log n)$ for comparisons.
+5. **Space Complexity**: Ideally $O(1)$ for in-place algorithms.
+6. **Ease of Implementation**: It should be straightforward to code and maintain.
+
+
+While no single algorithm perfectly matches all the ideal criteria, some come notably close:
+
+**Timsort**, a hybrid of Merge Sort and Insertion Sort, is designed for real-world data, being adaptive, stable, and having a consistent $O(n \log n)$ time complexity. However, it's not entirely in-place.
+
+**HeapSort** offers in-place sorting with $O(n \log n)$ time complexity across all cases, but it isn't stable and can be slower in practice than other algorithms. Balancing performance, adaptability, and other criteria is key to choosing the right sorting method for a given application.
+
+---
+
+## 🔹 5. Which _Sort Algorithm_ works best on _Mostly Sorted Data_?
+
+### Answer
+
+When dealing with data that is already partially sorted, or in other words, **mostly sorted data**, the best sorting algorithm to use is **Insertion Sort**.
+
+### Why Insertion Sort?
+
+- **Adaptability**: Insertion Sort indeed performs well on nearly-sorted data. However, its best-case time complexity is $O(n)$ (when the data is already sorted), while its average-case time complexity for random data is $O(n^2)$. It's important to note that the average-case time complexity can approach $O(n)$ for mostly sorted data, but it's not inherently $O(n)$ for all average cases.
+
+- **Efficiency for Few Elements**: With a low overhead, it can outperform more complex algorithms like Quick Sort or Merge Sort when the list is small.
+
+- **Simplicity**: This straightforward algorithm is an excellent choice when code simplicity and ease of implementation is a priority.
+
+### Code Example: Insertion Sort
+
+Here is the Python code:
+
+```python
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+
+# Example usage
+my_list = [5, 2, 4, 6, 1, 3]
+insertion_sort(my_list)
+print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
+```
+
+---
+
+## 🔹 6. What is the difference between _External_ and _Internal_ sorting?
+
+### Answer
+
+**External sorting** is designed to efficiently handle large datasets that can't fit entirely in system memory. It accomplishes this by using a combination of disk storage and memory.
+
+In contrast, **internal sorting** methods are suitable for small to modest datasets that can fit entirely in memory, making them faster and simpler to operate.
+
+### Key Distinctions
+
+#### Memory Usage
+- **External**: Utilizes both system memory and disk space.
+- **Internal**: Functions solely within system memory.
+
+#### Performance and File Accessibility
+
+- **External**: Algorithm's execution time can depend on data access from disk storage.
+- **Internal**: Generally faster due to the absence of disk access overhead.
+
+#### Data Partitioning
+
+- **External**: Splits data among multiple storage units, typically using **primary memory** as the main sorting area.
+- **Internal**: Works directly on the entire dataset present in memory.
+
+### Common Examples
+
+#### External Sorting
+
+- External Merge Sort
+- Polyphase Merge Sort
+- Replacement Selection
+- Distribution Sort
+
+#### Internal Sorting
+
+- Bubble Sort
+- Insertion Sort
+- Selection Sort
+- QuickSort
+- Merge Sort
+- HeapSort
+- Radix Sort
+- Counting Sort
+
+### Code Example: Internal Sorting - QuickSort
+
+Here is the Python code:
+
+```python
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quicksort(left) + middle + quicksort(right)
+
+# Example usage
+my_list = [3, 6, 8, 10, 1, 2, 1]
+print(quicksort(my_list))  # Output: [1, 1, 2, 3, 6, 8, 10]
+```
+
+### Code Example: External Sorting - External Merge Sort
+
+Here is the Python code:
+
+```python
+def external_merge_sort(input_file, output_file, memory_limit):
+    split_files = split_file(input_file, memory_limit)
+    sorted_files = [sort_file(f) for f in split_files]
+    merge_files(sorted_files, output_file)
+
+def split_file(input_file, memory_limit):
+    # Split the input file into smaller chunks that fit in memory
+    # Return a list of filenames of the chunks
+
+def sort_file(filename):
+    # Load the file into memory, sort it using a method like QuickSort, and save back to disk
+    # Return the filename of the sorted chunk
+
+def merge_files(sorted_files, output_file):
+    # Implement a k-way merge algorithm to merge the sorted files into a single output file
+
+# Example usage
+external_merge_sort("large_dataset.txt", "sorted_dataset.txt", 1000000)
+```
+
+---
+
+## 🔹 7. What does _Sort in Place_ mean?
+
+### Answer
+
+**In-Place sorting** refers to algorithms that rearrange data within its existing storage, without needing extra memory for the sorted result.
+
+This is especially useful in limited-memory situations. In most cases, it allows for **faster sort operations** by avoiding costly data movement between data structures.
+
+### Common In-Place Sorting Algorithms
+
+- QuickSort
+- HeapSort
+- BubbleSort
+- Insertion Sort
+- Selection Sort
+- Dual-Pivot QuickSort
+- Introselect (or Introspective Sort)
+
+
+---
+## 🔹 8. What is _Stability_ in the context of _Sorting Algorithms_?
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 9. What is _Bubble Sort_?
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 10. Name some _Optimization Techniques_ for _Bubble Sort_.
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 11. What is _Insertion Sort_?
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 12. What is _Merge Sort_?
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 13. What is _QuickSort_?
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 14. Compare _QuickSort_ vs. _Merge Sort_. When to use which?
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 15. Why is _Merge Sort_ preferred over _QuickSort_ for sorting _Linked Lists_?
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 16. What is _Heap Sort_?
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 17. What is _Radix Sort_?
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 18. Choose _The Fastest Algorithm_ for the given scenario.
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 19. Find _100 largest numbers_ in an _Array_ of 1 billion numbers.
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 20. Pair socks from a pile using a _Sorting Algorithm_.
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 21. _Insert_ an item in a _Sorted Linked List_, while maintaining order.
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 22. _Sort_ a _Stack_ using _Recursion_.
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
+## 🔹 23. _Sort_ a _Stack_ using another _Stack_.
+
+### Answer
+
+👉🏼 Check out all 23 answers here: [Devinterview.io - Sorting](https://devinterview.io/data/sorting-interview-questions)
+
+---
+
