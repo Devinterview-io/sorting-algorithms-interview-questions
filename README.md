@@ -1,4 +1,4 @@
-# ⚫ Sorting in Tech Interviews 2024: 23 Key Questions & Answers
+# ⚫ Sorting Algorithms in Tech Interviews 2024: 23 Key Questions & Answers
 
 **Sorting Algorithms** are methods used to rearrange elements in a sequence based on some criteria, such as numerical or lexicographical order. Common examples include quicksort, mergesort, and bubblesort. In coding interviews, questions on sorting algorithms gauge a candidate's grasp of **data organization techniques** and their trade-offs in terms of time and space complexity.
 
